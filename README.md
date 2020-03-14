@@ -1,2 +1,2 @@
 # Bank
-Proyecto pruba tecnica back
+Proyecto prueba tecnica back
