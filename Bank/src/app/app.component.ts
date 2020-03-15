@@ -8,14 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Bank';
-  despliegueAlerta: boolean = false;
-  usuario: string = "";
-  contrasena:string = "";
 
-  forget() {
-    this.despliegueAlerta = true;
-    setTimeout(() => {
-      this.despliegueAlerta = false;
-    }, 5000);
-  }
 }

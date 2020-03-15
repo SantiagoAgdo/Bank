@@ -1,0 +1,87 @@
+<div *ngIf="loginRight == false">
+    <div class="center">
+        <div class="login sombra">
+            <i class="far fa-user icon"></i>
+            <div class="contenedor">
+                <form [formGroup]="formGroup" (ngSubmit)="onSubmit(formGroup.value)">
+                    <mat-label class="text-center">Usuario</mat-label>
+                    <br>
+                    <mat-form-field class="inpu text-center">
+                        <input matInput [(ngModel)]="usuario" formControlName="user" type="text" placeholder="" required>
+                    </mat-form-field>
+                    <br>
+                    <mat-label class="text-center">Contraseña</mat-label>
+                    <br>
+                    <mat-form-field class="inpu text-center">
+                        <input matInput [(ngModel)]="contrasena" formControlName="pass" type="password" placeholder="" required>
+                    </mat-form-field>
+                    <a routerLinkActive="active"><button mat-raised-button type="submit"
+                            class="btn btn-light mt-5 boton" color="primary">Login</button></a>
+                    <a href="" (click)="forget()">
+                        <p class="forget text-center text-muted mt-4">Olvidaste Tu Contraseña?</p>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="despliegueAlerta == true" class="alert alert-dark" role="alert" class=" mt-3 text-center">
+        Deberas acercarte a una de nuestras <a href="#" class="alert-link">sucursales</a> para el cambio de contraseña!
+    </div>
+    <div class="cajalogo">
+        <img src="../assets/img/logo.png" class="logo" alt="">
+    </div>
+</div>
+<div *ngIf="loginRight == true">
+    <div class="container bor">
+        <div class="cajalogo">
+            <img src="../assets/img/logo.png" class="logo" alt="">
+        </div>
+        <h5 class="derecha">{{days}}</h5>
+        <h2 class="Titular">Santiago Agudelo Ramirez</h2>
+        <h5 class="numTarjeta">4570 3250 6525 4874</h5>
+        <h5 class="fechaCorte">proxima fecha de corte: 03/20/2020</h5>
+
+        <div class="nav nav-tabs">
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                  <a class="nav-link border border-primary" (click)="despliegueMenu(1)" href="#">Registrar transaccion</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link border border-primary" (click)="despliegueMenu(2)" href="#">Consultar transacciones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link border border-primary" (click)="despliegueMenu(3)" href="#">Editar fecha de corte</a>
+                </li>
+              </ul>
+        </div>
+        <div *ngIf="registroTrans == true">
+            <div class="card mb-2">
+                <div class="card-header">
+                    <h3>Tansacciones</h3>
+                    <div class="card-body">
+                        <div class="table  table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Numero De Tarjeta</th>
+                                    <th>CC</th>
+                                    <th>Tel</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-center">
+                                    <td>xxxx</td>
+                                    <td>1235 2541 6523 5478</td>
+                                    <td>1000.235.236</td>
+                                    <td>5146254</td>
+                                </tr>
+                            </tbody>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="consulta == true"></div>
+        <div *ngIf="edit == true"></div>
+    </div>
+</div>
