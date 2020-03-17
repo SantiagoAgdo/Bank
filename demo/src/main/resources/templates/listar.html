@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>VirusBank</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body style="background-color: rgb(252, 252, 252);">
+
+	
+    <div class="container" style="border: 3px solid black;">
+        <div style="display: flex;justify-content: center;padding-top: 3.5rem;">
+            <img src="../assets/img/logo.png" class="logo" alt="">
+        </div>
+        <h5 id="dia" style="display: flex;justify-content: flex-end;">01/01/2020</h5>
+        <h2 class="Titular">Santiago Agudelo Ramirez</h2>
+        <h5 class="numTarjeta">Tarjeta de credito: 4585 6253 2145 6589</h5>
+        <h5 class="fechaCorte">Proxima fecha de corte: 17/03/2020</h5>
+		
+        <div class="nav nav-tabs mt-4">
+            <ul class="nav nav-pills nav-fill">
+                <li id="registro" class="nav-item" onClick="muestra_oculta('registro')" > 
+                  <a class="nav-link border border-primary" style="margin-right: 1rem; color: black;"  th:href="@{/new}">Crear transaccion</a>
+                </li>
+                <li  class="nav-item" onClick="muestra_oculta('consulta')">
+                  <a class="nav-link border border-primary" style="margin-right: 1rem; cursor: pointer; color: black;">Consultar transacciones</a>
+                </li>
+              </ul>
+              <br>
+        	<div id="consulta" style="display:none;">
+        		<hr>
+        		<br>
+	               <div class="mb-2">
+			           <div class="card-header" style="margin-right: 13rem;" >
+			               <h3>Tansacciones</h3>
+			                  <table class="table">
+								<thead>
+								  <tr>
+								    <th scope="col"># Transaccion</th>
+								    <th scope="col">Nombre</th>
+								    <th scope="col">Numero de Tarjeta</th>
+								    <th scope="col">Valor</th>
+								    <th scope="col"> --- </th>
+								  </tr>
+								  </thead>
+								  <tbody>
+								    <tr th:each="persona:${personas}">
+								      <th scope="row" th:text="${persona.id}"></th>
+								      <td th:text="${persona.name}"></td>
+								      <td th:text="${persona.tarjeta}"></td>
+								      <td th:text="${persona.valor}">$ </td>
+								      <td><a th:href="@{/editar/}+${persona.id}" class="btn btn-dark">Editar transaccion</a></td>
+								    </tr>
+								  </tbody>
+							  </table>
+			            </div>
+			       </div>
+	        </div>
+        </div>
+    </div>
+	<script src="https://kit.fontawesome.com/1c06751c7f.js" crossorigin="anonymous"></script>
+	<script src="funciones.js" type="text/javascript" ></script>
+</body>
+</html>
