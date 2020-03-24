@@ -25,7 +25,7 @@ _Iniciar en el navegador escojido y dirigirse a su ruta local (http://localHost)
 ## Despliegue 📦
 
 _Mvn clean_
-_ _
+# 
 _ng build_
 
 ## Construido con 🛠️
