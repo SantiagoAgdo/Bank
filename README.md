@@ -10,14 +10,16 @@ _Prueba Tecnica Back HightTech_
 * _Postman(Excluyente)_
 
 ### Instalación 🔧
+_Descomprimir o clonar Front Ubicado en https://github.com/SantiagoAgdo/BankFront y instalar la libreria de npm_
+``` npm install ```
 
-_Descomprimir o clonar despues Ejecutar en los IDE's, iniciar servidor apache y mysql_
+_Descomprimir o clonar despues Ejecutar en los IDE's, iniciar servidor apache y mysql._
 
 ``` ng serve ``` 
 Y
  ``` mvn spring-boot:run ``` 
 
-_Se debe crear una BD en mysql version 8 nombre db_api_banco (agregar datos si desea) y ser ejecutada_ 
+_Se debe crear una BD en mysql version 8 nombre db_api_banco (agregar datos si desea) y ser ejecutada._ 
 
 _Iniciar en el navegador escojido y dirigirse a su ruta local (http://localHost) en el puerto 4200. 
 Visualiara un login el que el usuario es santiago y la contrasena es 123456, 
