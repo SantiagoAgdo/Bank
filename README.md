@@ -1,10 +1,44 @@
 # Bank
-Proyecto prueba tecnica back.
-Para la ejecucion correcta de la api se debe de ttener el Java development kit 8.
-la api fue creada usando spring framework y conectada a una db mysql 
 
-Clonar o descomprimir el repositorio y ejecutar en cualquier IDE como netbeans, sts o vsCode
-El proyecto corre desde localHost en el puerto 8080,  se debe iniciar un servidor  web apache y myqsql
-Esta conectado a una base de datos Mysql en el puerto 3306, por lo que para la vizualizacion de los datos, creacion y actualizacion de los mismos no apareceran, la base de datos es de nombre banco con tabla persona y columnas id(int),name(varchar),tarjeta(varchar),valor(int).
-El proyecto corre en local host.
+_Prueba Tecnica Back Highttech_
+
+### Pre-requisitos 📋
+
+_Java JDK 8_
+_Servidor de aplicaciones para mysql y apache_
+_IDE (Recomendado STS para el back y vsCode Para front)_
+_Postman(Excluyente)_
+
+### Instalación 🔧
+
+_Descomprimir o clonar despues Ejecutar en los IDE's, iniciar servidor apache y mysql _
+```
+ng serve
+```
+_Y_
+```
+mvn spring-boot:run 
+```
+_Se debe crear una BD en mysql version 8 nombre db_api_banco (agregar datos si desea) y ser ejecutada_
+_Iniciar en el navegador escojido y dirigirse a su ruta local (http://localHost) en el puerto 4200. Visualiara un login el que el usuario es santiago y la contrasena es 123456, seguido entrara a la pagina inicial el la que podra realizar las solicitudes requeridas_
+
+## Despliegue 📦
+
+_Mvn clean_
+_ng build_
+
+## Construido con 🛠️
+
+* Angular - El framework web usado
+* Java - Lenguaje usado para backend
+* Spring - Framework para el backend
+* [Maven](https://maven.apache.org/) - Manejador de dependencias
+* MySql - Base de datos usada
+
+
+## Autor ✒️
+
+
+* **Santiago Agudelo** 
+
 
