@@ -4,10 +4,10 @@ _Prueba Tecnica Back Highttech_
 
 ### Pre-requisitos 📋
 
-_Java JDK 8_
-_Servidor de aplicaciones para mysql y apache_
-_IDE (Recomendado STS para el back y vsCode Para front)_
-_Postman(Excluyente)_
+* _Java JDK 8_
+* _Servidor de aplicaciones para mysql y apache_
+* _IDE (Recomendado STS para el back y vsCode Para front)_
+* _Postman(Excluyente)_
 
 ### Instalación 🔧
 
