@@ -31,9 +31,9 @@ _ng build_
 
 ## Construido con 🛠️ 
 
-* Angular - El framework web usado 
+* [Angular](https://angular.io/) - El framework web usado 
 * Java - Lenguaje usado para backend 
-* Spring - Framework para el backend 
+* [Spring](https://spring.io/) - Framework para el backend 
 * [Maven](https://maven.apache.org/) - Manejador de dependencias
 * MySql - Base de datos usada 
 
