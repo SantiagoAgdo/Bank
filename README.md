@@ -10,7 +10,8 @@ _Prueba Tecnica Back HightTech_
 * _Postman(Excluyente)_
 
 ### Instalación 🔧
-_Descomprimir o clonar Front Ubicado en https://github.com/SantiagoAgdo/BankFront y instalar la libreria de npm_
+_Descomprimir o clonar Front Ubicado en https://github.com/SantiagoAgdo/BankFront y instalar la libreria de npm._
+
 ``` npm install ```
 
 _Descomprimir o clonar despues Ejecutar en los IDE's, iniciar servidor apache y mysql._
