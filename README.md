@@ -1,6 +1,6 @@
 # Bank 
 
-_Prueba Tecnica Back Highttech_ 
+_Prueba Tecnica Back HightSoft_ 
 
 ### Pre-requisitos 📋 
 
